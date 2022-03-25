@@ -48,7 +48,7 @@ class SsfAssessmentApplicationTests {
 				.content(body.toString());
 
 		this.mvc.perform(req).andDo(print()).andExpect(status().isNotFound())
-			.andExpect(result -> assertFalse(result.getResponse().getContentAsString().contains("plum")));
+			.andExpect(result -> assertFalse(result.getResponse().getContentAsString().contains("alex")));
 
 	}
 }
